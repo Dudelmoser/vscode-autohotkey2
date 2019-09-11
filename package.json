@@ -1,0 +1,51 @@
+{
+	"name": "vscode-autohotkey2",
+	"displayName": "AutoHotkey 2",
+	"description": "AutoHotkey 2 language support",
+	"version": "0.1.1",
+	"publisher": "dudelmoser",
+	"engines": {
+		"vscode": "^1.0.0"
+	},
+	"categories": [
+		"Programming Languages",
+		"Snippets"
+	],
+	"license": "MIT",
+	"icon": "icon.png",
+	"bugs": {
+		"url": "https://github.com/dudelmoser/vscode-autohotkey2/issues"
+	},
+	"homepage": "https://github.com/dudelmoser/vscode-autohotkey2/blob/master/README.md",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/dudelmoser/vscode-autohotkey2.git"
+	},
+	"galleryBanner": {
+		"color": "#232323",
+		"theme": "dark"
+	},
+	"keywords": [
+		"ahk",
+		"ah2",
+		"autohotkey",
+		"autohotkey2"
+	],
+	"contributes": {
+		"languages": [{
+			"id": "ah2",
+			"aliases": ["AutoHotkey2", "autohotkey2", "ahk2", "ah2"],
+			"extensions": [".ahk", ".ah2", ".ahk2"],
+			"configuration": "./languages/ah2.json"
+		}],
+		"grammars": [{
+			"language": "ah2",
+			"scopeName": "source.ahk",
+			"path": "./syntaxes/ah2.tmLanguage"
+		}],
+		"snippets": [{
+			"language": "ah2",
+			"path": "./snippets/ah2.json"
+		}]
+	}
+}
