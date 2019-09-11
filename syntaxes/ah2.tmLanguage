@@ -165,7 +165,7 @@
 			</dict>
 			<dict>
 				<key>match</key>
-				<string>^\s*(?i:break|case|continue|default|for|gosub|goto|if|loop|loop files|loop parse|loop read|loop reg|return|switch|throw|try|while)\b</string>
+				<string>^\s*(?i:?|:|break|case|continue|default|for|gosub|goto|if|loop|loop files|loop parse|loop read|loop reg|return|switch|throw|try|while)\b</string>
 				<key>name</key>
 				<string>keyword.control.ahk</string>
 			</dict>
@@ -183,9 +183,21 @@
 			</dict>
 			<dict>
 				<key>match</key>
+				<string>\b(?i:this)\b</string>
+				<key>name</key>
+				<string>variable.language.ahk</string>
+			</dict>
+			<dict>
+				<key>match</key>
 				<string>:=|\.=</string>
 				<key>name</key>
 				<string>keyword.operator.assignment.ahk</string>
+			</dict>
+			<dict>
+				<key>match</key>
+				<string>=></string>
+				<key>name</key>
+				<string>keyword.other.fat-arrow.ahk</string>
 			</dict>
 			<dict>
 				<key>match</key>
