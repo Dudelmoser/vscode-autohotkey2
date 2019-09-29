@@ -135,7 +135,7 @@
 			</dict>
 			<dict>
 				<key>match</key>
-				<string>\b(?i:a_ahkpath|a_ahkversion|a_allowmainwindow|a_appdata|a_appdatacommon|a_args|a_computername|a_comspec|a_controldelay|a_coordmodecaret|a_coordmodemenu|a_coordmodemouse|a_coordmodepixel|a_coordmodetooltip|a_cursor|a_dd|a_ddd|a_dddd|a_defaultmousespeed|a_desktop|a_desktopcommon|a_detecthiddentext|a_detecthiddenwindows|a_endchar|a_eventinfo|a_fileencoding|a_hour|a_iconfile|a_iconhidden|a_iconnumber|a_icontip|a_index|a_initialworkingdir|a_is64bitos|a_isadmin|a_iscompiled|a_iscritical|a_ispaused|a_issuspended|a_isunicode|a_keydelay|a_keydelayplay|a_keyduration|a_keydurationplay|a_language|a_lasterror|a_linefile|a_linenumber|a_loopfield|a_loopfileattrib|a_loopfiledir|a_loopfileext|a_loopfilefullpath|a_loopfilename|a_loopfilepath|a_loopfileshortname|a_loopfileshortpath|a_loopfilesize|a_loopfilesizekb|a_loopfilesizemb|a_loopfiletimeaccessed|a_loopfiletimecreated|a_loopfiletimemodified|a_loopreadline|a_loopregkey|a_loopregname|a_loopregtimemodified|a_loopregtype|a_mday|a_min|a_mm|a_mmm|a_mmmm|a_mon|a_mousedelay|a_msec|a_mydocuments|a_now|a_nowutc|a_osversion|a_priorhotkey|a_priorkey|a_programfiles|a_programs|a_programscommon|a_ptrsize|a_regview|a_screendpi|a_screenheight|a_screenwidth|a_scriptdir|a_scriptfullpath|a_scripthwnd|a_scriptname|a_sec|a_sendlevel|a_sendmode|a_space|a_startmenu|a_startmenucommon|a_startup|a_startupcommon|a_storecapslockmode|a_stringcasesense|a_tab|a_temp|a_thisfunc|a_thishotkey|a_thislabel|a_tickcount|a_timeidle|a_timeidlekeyboard|a_timeidlemouse|a_timeidlephysical|a_timesincepriorhotkey|a_timesincethishotkey|a_titlematchmode|a_titlematchmodespeed|a_traymenu|a_username|a_wday|a_windelay|a_windir|a_workingdir|a_yday|a_year|a_yweek|a_yyyy|clipboard|errorlevel|false|true)\b</string>
+				<string>\b(?i:a_ahkpath|a_ahkversion|a_allowmainwindow|a_appdata|a_appdatacommon|a_args|a_computername|a_comspec|a_controldelay|a_coordmodecaret|a_coordmodemenu|a_coordmodemouse|a_coordmodepixel|a_coordmodetooltip|a_cursor|a_dd|a_ddd|a_dddd|a_defaultmousespeed|a_desktop|a_desktopcommon|a_detecthiddentext|a_detecthiddenwindows|a_endchar|a_eventinfo|a_fileencoding|a_hour|a_iconfile|a_iconhidden|a_iconnumber|a_icontip|a_index|a_initialworkingdir|a_is64bitos|a_isadmin|a_iscompiled|a_iscritical|a_ispaused|a_issuspended|a_isunicode|a_keydelay|a_keydelayplay|a_keyduration|a_keydurationplay|a_language|a_lasterror|a_linefile|a_linenumber|a_loopfield|a_loopfileattrib|a_loopfiledir|a_loopfileext|a_loopfilefullpath|a_loopfilename|a_loopfilepath|a_loopfileshortname|a_loopfileshortpath|a_loopfilesize|a_loopfilesizekb|a_loopfilesizemb|a_loopfiletimeaccessed|a_loopfiletimecreated|a_loopfiletimemodified|a_loopreadline|a_loopregkey|a_loopregname|a_loopregtimemodified|a_loopregtype|a_mday|a_min|a_mm|a_mmm|a_mmmm|a_mon|a_mousedelay|a_msec|a_mydocuments|a_now|a_nowutc|a_osversion|a_priorhotkey|a_priorkey|a_programfiles|a_programs|a_programscommon|a_ptrsize|a_regview|a_screendpi|a_screenheight|a_screenwidth|a_scriptdir|a_scriptfullpath|a_scripthwnd|a_scriptname|a_sec|a_sendlevel|a_sendmode|a_space|a_startmenu|a_startmenucommon|a_startup|a_startupcommon|a_storecapslockmode|a_stringcasesense|a_tab|a_temp|a_thisfunc|a_thishotkey|a_thislabel|a_tickcount|a_timeidle|a_timeidlekeyboard|a_timeidlemouse|a_timeidlephysical|a_timesincepriorhotkey|a_timesincethishotkey|a_titlematchmode|a_titlematchmodespeed|a_traymenu|a_username|a_wday|a_windelay|a_windir|a_workingdir|a_yday|a_year|a_yweek|a_yyyy|clipboard|errorlevel)\b</string>
 				<key>name</key>
 				<string>support.variable.ahk</string>
 			</dict>
@@ -159,25 +159,40 @@
 			</dict>
 			<dict>
 				<key>match</key>
-				<string>^(?=\s*for\s+\(?\w+\s*,\w+\s+)in\b</string>
-				<key>name</key>
-				<string>keyword.control.ahk</string>
-			</dict>
-			<dict>
-				<key>match</key>
 				<string>^\s*(?i:break|case|continue|default|for|gosub|goto|if|loop|loop files|loop parse|loop read|loop reg|return|switch|throw|try|while)\b</string>
 				<key>name</key>
 				<string>keyword.control.ahk</string>
 			</dict>
 			<dict>
 				<key>match</key>
-				<string>^(?=\s*\}?\s*)(?i:catch|else|finally|until)\b</string>
+				<string>\b(?i:in)\b</string>
+				<key>name</key>
+				<string>keyword.control.ahk</string>
+			</dict>
+			<dict>
+				<key>captures</key>
+				<dict>
+					<key>1</key>
+					<dict>
+						<key>name</key>
+						<!-- punctuation is no standard group in TexMate grammars -->
+						<!-- and would not overwrite the keyword.control highlighting. -->
+						<string>keyword.operator.other.ahk</string>
+					</dict>
+					<key>2</key>
+					<dict>
+						<key>name</key>
+						<string>keyword.control.ahk</string>
+					</dict>
+				</dict>
+				<key>match</key>
+				<string>^(\s*}?\s*)(?i:catch|else if|else|finally|until)\b</string>
 				<key>name</key>
 				<string>keyword.control.ahk</string>
 			</dict>
 			<dict>
 				<key>match</key>
-				<string>\b(?i:new)\b</string>
+				<string>\b(?i:new|in)\b</string>
 				<key>name</key>
 				<string>keyword.operator.other.ahk</string>
 			</dict>
@@ -204,6 +219,12 @@
 				<string>!|\+|-|\*|/|~|\^|\||&amp;</string>
 				<key>name</key>
 				<string>keyword.operator.arithmetic.ahk</string>
+			</dict>
+			<dict>
+				<key>match</key>
+				<string>\b(?i:false|true)\b</string>
+				<key>name</key>
+				<string>constant.language.ahk</string>
 			</dict>
 			<dict>
 				<key>match</key>
