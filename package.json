@@ -1,6 +1,6 @@
 {
 	"name": "vscode-autohotkey2",
-	"displayName": "AutoHotkey 2",
+	"displayName": "AutoHotkey 2 (alpha)",
 	"description": "AutoHotkey 2 language support",
 	"version": "0.1.1",
 	"publisher": "dudelmoser",
