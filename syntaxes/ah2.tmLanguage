@@ -177,7 +177,7 @@
 						<key>name</key>
 						<!-- punctuation is no standard group in TexMate grammars -->
 						<!-- and would not overwrite the keyword.control highlighting. -->
-						<string>keyword.operator.other.ahk</string>
+						<string>punctuation.bracket.ahk</string>
 					</dict>
 					<key>2</key>
 					<dict>
@@ -186,7 +186,7 @@
 					</dict>
 				</dict>
 				<key>match</key>
-				<string>^(\s*}?\s*)(?i:catch|else if|else|finally|until)\b</string>
+				<string>\b(?i:catch|else if|else|finally|until)\b</string>
 				<key>name</key>
 				<string>keyword.control.ahk</string>
 			</dict>
