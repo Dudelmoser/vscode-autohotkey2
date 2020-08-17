@@ -22,7 +22,7 @@
 					</dict>
 				</dict>
 				<key>match</key>
-				<string>\s(;).*</string>
+				<string>\s+(;).*</string>
 				<key>name</key>
 				<string>comment.line.semicolon.ahk</string>
 			</dict>
@@ -104,7 +104,7 @@
 					</dict>
 				</dict>
 				<key>match</key>
-				<string>#\b(?i:include|includeagain)\b(.*)$</string>
+				<string>#(?i:include|includeagain)\b(.*)$</string>
 				<key>name</key>
 				<string>keyword.control.import.ahk</string>
 			</dict>
@@ -123,7 +123,7 @@
 					</dict>
 				</dict>
 				<key>match</key>
-				<string>#\b(?i:clipboardtimeout|errorstdout|hotkeyinterval|hotkeymodifiertimeout|hotstring|if|iftimeout|include|includeagain|inputlevel|installkeybdhook|installmousehook|keyhistory|maxhotkeysperinterval|maxthreads|maxthreadsbuffer|maxthreadsperhotkey|menumaskkey|notrayicon|persistent|singleinstance|suspendexempt|usehook|warn|winactivateforce)\b([^;]*)(\s+;.*)?$</string>
+				<string>#(?i:clipboardtimeout|errorstdout|hotkeyinterval|hotkeymodifiertimeout|hotstring|if|iftimeout|include|includeagain|inputlevel|installkeybdhook|installmousehook|keyhistory|maxhotkeysperinterval|maxthreads|maxthreadsbuffer|maxthreadsperhotkey|menumaskkey|notrayicon|persistent|singleinstance|suspendexempt|usehook|warn|winactivateforce)\b</string>
 				<key>name</key>
 				<string>comment.line.directive.ahk</string>
 			</dict>
@@ -262,7 +262,7 @@
 					</dict>
 				</dict>
 				<key>end</key>
-				<string>(?<!`)(")(?!")|^</string>
+				<string>(?&lt;!`)(")(?!")|^</string>
 				<key>endCaptures</key>
 				<dict>
 					<key>1</key>
@@ -277,7 +277,7 @@
 				<array>
 					<dict>
 						<key>match</key>
-						<string>""</string>
+						<string>`"</string>
 						<key>name</key>
 						<string>constant.character.escape.ahk</string>
 					</dict>
